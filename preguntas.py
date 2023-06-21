@@ -91,7 +91,7 @@ def pregunta_04():
     """
 
     # Importe CountVetorizer
-    from sklearn.feature_extraction.text import CountVetorizer
+    from sklearn.feature_extraction.text import CountVectorizer
     # Importe GridSearchCV
     from sklearn.model_selection import GridSearchCV
     # Importe Pipeline
@@ -110,7 +110,7 @@ def pregunta_04():
     # límite superior para la frecuencia de palabras es del 100% y un límite
     # inferior de 5 palabras. Solo deben analizarse palabras conformadas por
     # letras.
-    countVectorizer = CountVetorizer(
+    countVectorizer = CountVectorizer(
         analyzer=analyzer,
         lowercase=True,
         stop_words=None,
